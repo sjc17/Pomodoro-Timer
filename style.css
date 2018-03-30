@@ -47,7 +47,6 @@ h4 {
 }
 
 #timerBlock {  
-
   display:flex;
   justify-content: center;
   align-items: center;
@@ -65,4 +64,8 @@ h4 {
 .timerBlockChild {  
   width: 200px;
   height: 100px;
+}
+
+#timerDisplay {
+  font-size: 72px;
 }
