@@ -8,6 +8,9 @@ body {
 
 button {
   font-family: 'Oswald', sans-serif;
+  background-color: Tomato;
+  width: 60px;
+  height: 30px;
 }
 
 em {
