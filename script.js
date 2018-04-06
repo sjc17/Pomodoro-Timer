@@ -101,7 +101,7 @@ function secondCountDown() {
   else {
     timer = setTimeout(() => {
       secondCountDown();
-    }, 1);
+    }, 1000);
   }  
 }
 
