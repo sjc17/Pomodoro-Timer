@@ -101,7 +101,7 @@ function secondCountDown() {
   else {
     timer = setTimeout(() => {
       secondCountDown();
-    }, 1000);
+    }, 1);
   }  
 }
 
@@ -140,8 +140,12 @@ function setNextPomodoroState() {
     pomodoroState = 0;    
     document.getElementById('stateDisplay').innerHTML = 'Session<br/>'+completedPomodoros+' pomodoros completed';
   }
-  document.getElementById('info').innerHTML = 'You have spent '+pomoTimeSpent+' minutes immersed in your task.'
-  document.getElementById('info').innerHTML += '<br/>And a total of '+totalTimeSpent+' minutes using the Pomodoro Technique.'
+  pomoTimeSpentHours = Math.floor(pomoTimeSpent/60);
+  pomoTimeSpentMins = pomoTimeSpent%60;
+  totalTimeSpentHours = Math.floor(totalTimeSpent/60);
+  totalTimeSpentMins = totalTimeSpent%60;
+  document.getElementById('info').innerHTML = 'You have spent '+pomoTimeSpentHours+' hours and '+pomoTimeSpentMins+' minutes immersed in your task.'
+  document.getElementById('info').innerHTML += '<br/>And a total of '+totalTimeSpentHours+' hours and '+totalTimeSpentMins+' minutes using the Pomodoro Technique.'
   timerReset();  
 }
 
