@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url("https://fonts.googleapis.com/css?family=Oswald");
 
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: Pink;
   text-align: center;
 }
 
 button {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   background-color: Tomato;
   width: 60px;
   height: 30px;
@@ -20,11 +20,7 @@ em {
 h4 {
   text-align: center;
 }
-/*
-.all-top-blocks {
-  background-color: pink;
-}
-*/
+
 .block {
   display: inline-block;
   width: 30%;
@@ -32,8 +28,8 @@ h4 {
 }
 
 .block-elements {
-  vertical-align: top;
   display: inline-block;
+  vertical-align: top;
   user-select: none;
   font-size: 26px;
   border-radius: 100%;
@@ -49,8 +45,8 @@ h4 {
   font-size: 20px;
 }
 
-#timerBlock {  
-  display:flex;
+#timerBlock {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -60,15 +56,33 @@ h4 {
   margin-top: 5%;
   text-align: center;
   width: 300px;
-  height: 300px;  
+  height: 300px;
   background-color: Tomato;
 }
 
-.timerBlockChild {  
+.timerBlockChild {
   width: 200px;
   height: 100px;
 }
 
 #timerDisplay {
   font-size: 72px;
+}
+
+@media only screen and (max-width: 450px) {
+  .all-top-blocks {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .block {
+    width: 100%;
+  }
+}
+
+.pointer {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
